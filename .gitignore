@@ -1,0 +1,14 @@
+#java specific
+bin/
+*.class
+
+#log files
+*.log
+
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out

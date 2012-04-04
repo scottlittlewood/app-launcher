@@ -15,12 +15,10 @@ public class IconLoader {
 			String stockId = "gtk-help";
 			int direction = 1; // NONE=0 ; LTR=1; RTL=2;
 			String detail = null;
-			int iconSize = com.sun.java.swing.plaf.gtk.GTKConstants.IconSize.SMALL_TOOLBAR
-					.ordinal();
+			int iconSize = com.sun.java.swing.plaf.gtk.GTKConstants.IconSize.SMALL_TOOLBAR.ordinal();
 
 			UNIXToolkit utk = (UNIXToolkit) Toolkit.getDefaultToolkit();
-			BufferedImage img = utk.getStockIcon(widgetType, stockId, iconSize,
-					direction, detail);
+			BufferedImage img = utk.getStockIcon(widgetType, stockId, iconSize, direction, detail);
 			icon = new ImageIcon(img); // Will throw if img==null
 
 		} catch (NoClassDefFoundError e) {
